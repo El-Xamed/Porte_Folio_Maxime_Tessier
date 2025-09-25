@@ -1,0 +1,28 @@
+.box{
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+    
+}
+.background{
+    background-image: url(ressources/headspacesky.png);
+}
+.allign{
+    display: flex ;
+    flex-direction: row;
+}
+.main{
+    width: 80%;
+}
+.aside{
+    width: 20% ;
+}
+.headerwrap{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    position: sticky;
+    bottom: 0;
+}
+.footer{
+    top: 0;
+}
