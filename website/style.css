@@ -38,13 +38,22 @@
     flex-direction: column;
 }
 .main{
-    background: linear-gradient(to right,rgba(0, 238, 255, 0.623),rgba(197, 14, 197, 0.753),rgba(255, 0, 0, 0.603),rgba(0, 0, 0, 0.534));
+    background: linear-gradient(to right,rgba(0, 238, 255, 0.623),rgba(153, 39, 219, 0.603));
     -ms-flex-align: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 1%;
     margin-top: 8%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.pp{
+    -ms-flex-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+    margin-top: 8%; 
 }
 .aside{
     background-color: rgba(0, 140, 255, 0.466);
@@ -102,6 +111,7 @@
         margin-left: 30%;
         margin-right: 30%;
         margin-top: 20px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
     .project_p
@@ -125,6 +135,7 @@
     {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
+
     @font-face {
         font-family: "Omori1";
         src: url(ressources/OMORI_GAME.ttf);
