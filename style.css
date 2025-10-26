@@ -259,8 +259,9 @@
     background-size: auto 100vh;
     background-position: 0 0;
     background-attachment: fixed;
-    animation: scrollBackground 30s linear infinite;
+    animation: scrollBackground 60s linear infinite;
     min-height: 100vh;
+    background-color: #7B2FBE;
 }
 
 @keyframes scrollBackground {
@@ -500,21 +501,23 @@
 
         .main {
             margin-top: 2% !important;
-            padding: 15px;
+            padding: 12px;
+            width: 95%;
         }
 
         .main h4 {
-            font-size: 28px !important;
+            font-size: 22px !important;
         }
 
         .main p {
-            font-size: 16px !important;
+            font-size: 13px !important;
+            line-height: 1.5 !important;
         }
 
         /* Carte Omori plus petite */
         .omori-card {
-            width: 200px;
-            margin-top: 20px;
+            width: 180px;
+            margin-top: 15px;
         }
 
         .omori-card-header {
@@ -610,19 +613,33 @@
     /* Très petits écrans (mobiles en portrait) */
     @media screen and (max-width: 480px) {
         .top-header h1 {
-            font-size: 18px !important;
+            font-size: 16px !important;
+        }
+
+        .main {
+            padding: 10px;
         }
 
         .main h4 {
-            font-size: 24px !important;
+            font-size: 20px !important;
         }
 
         .main p {
-            font-size: 14px !important;
+            font-size: 12px !important;
+            line-height: 1.4 !important;
         }
 
         .omori-card {
-            width: 180px;
+            width: 160px;
+        }
+
+        .omori-card-header {
+            font-size: 18px;
+            padding: 6px 0;
+        }
+
+        .omori-card-info p {
+            font-size: 12px;
         }
 
         .project-card-content h3 {
