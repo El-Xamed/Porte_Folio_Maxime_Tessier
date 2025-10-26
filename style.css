@@ -452,3 +452,188 @@
         grid-template-rows: repeat(3, 1fr);
         grid-gap: 10px;
     }
+
+    /* ==================== RESPONSIVE MOBILE ==================== */
+    @media screen and (max-width: 768px) {
+        /* Sidebar plus petite sur mobile */
+        .sidebar {
+            width: 60px;
+            padding-top: 10px;
+        }
+
+        .sidebar-logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .sidebar-link {
+            font-size: 9px;
+            padding: 8px 5px;
+        }
+
+        .sidebar-icon {
+            font-size: 18px;
+        }
+
+        /* Header adapté */
+        .top-header {
+            left: 60px;
+            height: 50px;
+        }
+
+        .top-header h1 {
+            font-size: 24px !important;
+        }
+
+        /* Contenu principal */
+        .main-content {
+            margin-left: 60px;
+            margin-top: 50px;
+            padding: 10px;
+        }
+
+        /* Resume en colonne sur mobile */
+        .allignrow {
+            flex-direction: column !important;
+            align-items: center;
+        }
+
+        .main {
+            margin-top: 2% !important;
+            padding: 15px;
+        }
+
+        .main h4 {
+            font-size: 28px !important;
+        }
+
+        .main p {
+            font-size: 16px !important;
+        }
+
+        /* Carte Omori plus petite */
+        .omori-card {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        .omori-card-header {
+            font-size: 20px;
+        }
+
+        .omori-card-info p {
+            font-size: 14px;
+        }
+
+        /* Projets carousel */
+        .carousel-container {
+            padding: 0 40px;
+        }
+
+        .project-card {
+            flex-direction: column;
+            min-width: calc(100% - 20px);
+        }
+
+        .project-card-img {
+            width: 100%;
+            min-width: 100%;
+            height: 180px;
+            border-right: none;
+            border-bottom: 3px solid white;
+            object-fit: cover;
+        }
+
+        .project-card-content {
+            padding: 15px;
+        }
+
+        .project-card-content h3 {
+            font-size: 24px;
+        }
+
+        .project-card-content p {
+            font-size: 14px;
+        }
+
+        .project-btn {
+            font-size: 14px;
+            padding: 10px 16px;
+        }
+
+        .carousel-btn {
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
+        }
+
+        /* Timeline cours simplifiée */
+        .gridCourse {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .gridCourse hr {
+            display: none;
+        }
+
+        .gridCourse div[style*="background-color: #fff"] {
+            display: none;
+        }
+
+        .gridCourse section {
+            margin-bottom: 30px !important;
+            grid-column: auto !important;
+            grid-row: auto !important;
+        }
+
+        .gridCourse h4 {
+            text-align: left !important;
+            font-size: 24px !important;
+        }
+
+        .gridCourse p {
+            text-align: left !important;
+            font-size: 16px !important;
+        }
+
+        /* Footer */
+        .footer {
+            left: 60px;
+            height: auto;
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+
+    /* Très petits écrans (mobiles en portrait) */
+    @media screen and (max-width: 480px) {
+        .top-header h1 {
+            font-size: 18px !important;
+        }
+
+        .main h4 {
+            font-size: 24px !important;
+        }
+
+        .main p {
+            font-size: 14px !important;
+        }
+
+        .omori-card {
+            width: 180px;
+        }
+
+        .project-card-content h3 {
+            font-size: 20px;
+        }
+
+        .project-card-content p {
+            font-size: 12px;
+        }
+
+        .carousel-container {
+            padding: 0 30px;
+        }
+    }
