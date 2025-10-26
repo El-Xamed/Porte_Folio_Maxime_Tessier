@@ -8,23 +8,39 @@
     </head>
     
     <body class="background">
-            <header class="header">
-                <div>
-                    <div class="allignrow">
-                        <img src="ressources/M_T_mini.JPEG" alt="that's me..." class="basemargin basicBorder" width="75" height="80">
-                        <h1 style="color:white" class="textcenter">MAXIME TESSIER</h1>
-                    </div>
-                
-                    <nav class="box textcenter">
-                        <a href="index.html" style="color:white">HomePage</a>
-                        <a href="#courses" style="color:white">Courses</a>
-                        <a href="#Projects" style="color:white">Projects</a>
-                        <a href="mailto:maximetessier47@gmail.com">Email me !</a>
-                        <a href="ressources/CV_MaximeTessier.pdf" style="color:white">My CV</a>
-                    </nav>
+            <aside class="sidebar">
+                <div class="sidebar-logo">
+                    <img src="ressources/M_T_mini.JPEG" alt="MT Logo">
                 </div>
+                
+                <nav class="sidebar-nav">
+                    <a href="index.html" class="sidebar-link">
+                        <div class="sidebar-icon">🏠</div>
+                        <span>Home</span>
+                    </a>
+                    <a href="#Projects" class="sidebar-link">
+                        <div class="sidebar-icon">🎮</div>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#courses" class="sidebar-link">
+                        <div class="sidebar-icon">📚</div>
+                        <span>Courses</span>
+                    </a>
+                    <a href="mailto:maximetessier47@gmail.com" class="sidebar-link">
+                        <div class="sidebar-icon">✉️</div>
+                        <span>Email me</span>
+                    </a>
+                    <a href="ressources/CV_MaximeTessier.pdf" class="sidebar-link">
+                        <div class="sidebar-icon">📄</div>
+                        <span>My CV</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <header class="top-header">
+                <h1 style="color:white; margin: 0;">MAXIME TESSIER</h1>
             </header>
-            <div> 
+            <div class="main-content"> 
                 <main class="allignrow"> 
                     <div class="main">
                     <div class="alligncolumn">
@@ -42,12 +58,18 @@
                     </div>
                     </div> 
                     <div class="alligncolumn" style="margin-top: 8%;">
-                        <img class="pp basicBorder" src="ressources/M_T.JPEG" alt="that's me..." width="250" height="300">
-                        <p style="font-family: Omori2;font-size: 20px;color: white;">23 years old, speaks french, <br> english and is learning japanese</p>
+                        <div class="omori-card">
+                            <div class="omori-card-header">MAXIME</div>
+                            <div class="omori-card-photo">
+                                <img src="ressources/M_T.JPEG" alt="that's me...">
+                            </div>
+                            <div class="omori-card-info">
+                                <p>23 years old<br>speaks french, english<br>and is learning japanese</p>
+                            </div>
+                        </div>
                     </div>
                     
                 </main>
-                >
 
             <div id="courses" class="gridCourse">
                 <hr width="1" size="1200" style="grid-column: 11;grid-row: 1/5; color: white;">
@@ -87,36 +109,67 @@
 
 
             </div>
-                <aside id="Projects"class="allprojects">
-                    <h1 style="text-align: center;color: white;">Projects :</h1>
-                    <div class="project project_div">
-                        <img class="project_img" src="ressources/pfp.png" alt="project1" width="140" height="140">
-                        <p style="color: white;"class="project_p">We're working with some friends on a important game project since september 2024. <br>While studying at Epitech, we're making an indie game that we hopefully will reveal soon so keep an eye on that ;)</p>
-                    </div>
-                    <div class="project project_div">
-                        <img class="project_img" src="ressources/tckgb.png" alt="project1" width="140" height="170">
-                        <p style="color: white;"class="project_p"> Final year project for 6 students over 1 year <br>
-                            Game Design and Development <br>
-                            Innovate in the world of RPGs by drawing inspiration from tabletop role-playing game mechanics</p>
-                        <a href="https://arwenv17.itch.io/the-coolkid-guidebook" class="project_input project_input:hover"><img style="height: 100px;width: 100px;border-radius: 50%;" src="ressources/itch.png" alt="lienitchio"></a>
-                    </div>
-                    <div class="project project_div">
-                        <img class="project_img" src="ressources/bs.png" alt="project1" width="140" height="170">
-                        <p style="color: white;"class="project_p"> Final year project for 7 people over 6 months <br>
-                            Gameplay development and environment animator <br>
-                            Produce an instantly fun multiplayer game</p>
-                        <a href="https://alexis-baron.itch.io/brutal-star" class="project_input project_input:hover"><img style="height: 100px;width: 100px;border-radius: 50%;" src="ressources/itch.png" alt="lienitchio"></a>
-                        
 
+                <section id="Projects" class="projects-carousel-section">
+                    <h1 style="text-align: center; color: white; margin-top: 0;">Featured Projects</h1>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev-btn" onclick="scrollCarousel(-1)">❮</button>
+                        <div class="projects-carousel">
+                            <div class="project-card">
+                                <img class="project-card-img" src="ressources/pfp.png" alt="project1">
+                                <div class="project-card-content">
+                                    <h3>Secret Indie Game Project</h3>
+                                    <p>We're working with some friends on an important game project since september 2024.<br>
+                                    While studying at Epitech,<br>
+                                    we're making an indie game that we hopefully will reveal soon so keep an eye on that ;)</p>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <img class="project-card-img" src="ressources/tckgb.png" alt="project2">
+                                <div class="project-card-content">
+                                    <h3>The Coolkid Guidebook</h3>
+                                    <p>Final year project for 6 students over 1 year<br>
+                                    Game Design and Development<br>
+                                    Innovate in the world of RPGs by drawing inspiration from tabletop role-playing game mechanics</p>
+                                    <a href="https://arwenv17.itch.io/the-coolkid-guidebook" class="project-btn" target="_blank">
+                                        <img src="ressources/itch.png" alt="itch.io">Play on itch.io
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <img class="project-card-img" src="ressources/bs.png" alt="project3">
+                                <div class="project-card-content">
+                                    <h3>Brutal Star</h3>
+                                    <p>Final year project for 7 people over 6 months<br>
+                                    Gameplay development and environment animator<br>
+                                    Produce an instantly fun multiplayer game</p>
+                                    <a href="https://alexis-baron.itch.io/brutal-star" class="project-btn" target="_blank">
+                                        <img src="ressources/itch.png" alt="itch.io">Play on itch.io
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next-btn" onclick="scrollCarousel(1)">❯</button>
                     </div>
-                </aside>
+                </section>
             </div>
-        </div>
+        
         <footer class="footer">
             <address style="color:white">
             Written by Maxime Tessier.<br>
             Check what we're planning to do in the futur with my friends at:<br>
             <a href="https://pimpfrogproductions.com/about-us" style="color:white">PimpFrogProductions.com</a>
         </footer>
+
+        <script>
+            function scrollCarousel(direction) {
+                const carousel = document.querySelector('.projects-carousel');
+                const cardWidth = carousel.querySelector('.project-card').offsetWidth + 20; // 20px is margin
+                carousel.scrollBy({
+                    left: direction * cardWidth,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
     </body>
 </html>
